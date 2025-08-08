@@ -4,9 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans 
        http://www.springframework.org/schema/beans/spring-beans.xsd">
        
-       <bean id="vechileBean" class="com.tnsif.springcore1.Bike">
-       </bean>
        
-       
+  <bean id="studentBean" class="com.tnsif.springcoreexample.Student">
+  <property name="name" value="Sharmila"> </property>
+  </bean>
+  
+  <bean id="collegeBean" class="com.tnsif.springcoreexample.College">
+  <property name="student" ref="studentBean"></property>
+  </bean>
        
 </beans>
